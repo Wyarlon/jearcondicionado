@@ -7,11 +7,6 @@
     <title>JE Ar-Condicionado | Serviços Profissionais</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Efeitos temporários até carregar o CSS */
-        body { font-size: 18px; }
-        .btn { font-size: 18px !important; }
-    </style>
 </head>
 <body>
     <header class="header">
@@ -132,25 +127,6 @@
         </div>
     </footer>
 
-    <script>
-        // ANIMAÇÃO DE SCROLL
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-            
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
