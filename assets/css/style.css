@@ -338,3 +338,92 @@ body {
         padding: 40px 15px;
     }
 }
+/* ========== AJUSTES ESPECÍFICOS PARA MOBILE ========== */
+@media (max-width: 480px) {
+    /* Ajustes no cabeçalho */
+    .header {
+        padding: 30px 15px;
+        min-height: 80vh;
+    }
+
+    .logo-container {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    /* Textos maiores */
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    /* Botões mais visíveis */
+    .btn {
+        padding: 12px 20px;
+        min-width: 160px;
+        font-size: 1rem;
+        margin: 8px auto;
+    }
+
+    /* Cards de serviço ocupam toda largura */
+    .service-card {
+        width: 95%;
+        padding: 20px;
+        margin: 0 auto 15px;
+    }
+
+    /* Seções com menos espaçamento */
+    .section, .promo-section {
+        padding: 30px 10px !important;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    /* Promoção mais compacta */
+    .promo-price {
+        font-size: 2.2rem;
+    }
+
+    /* Rodapé ajustado */
+    .footer {
+        padding: 30px 15px;
+    }
+
+    /* Links sociais menores */
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Melhorias para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .service-card {
+        width: 80%;
+    }
+    
+    .header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Garante que imagens não ultrapassem a tela */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajuste fino para inputs em mobile */
+input, textarea, select {
+    font-size: 16px !important;
+}
