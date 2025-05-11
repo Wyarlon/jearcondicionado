@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="JE Ar-Condicionado - Instalação, manutenção e limpeza com garantia em Fortaleza. Atendimento 24h!">
     <title>JE Ar-Condicionado | Serviços Profissionais</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <script src="assets/js/script.js"></script>
     <header class="header">
         <div class="logo-container">
-            <img src="assets/img/logo-je.png.png" alt="JE Ar-Condicionado" class="logo">
+            <img src="assets/img/logo-je.png" alt="JE Ar-Condicionado" class="logo">
         </div>
         <h1>JE AR-CONDICIONADO</h1>
         <p>Soluções técnicas com excelência e garantia</p>
@@ -27,13 +26,6 @@
         </div>
     </header>
 
-    <!-- Adicione outras seções aqui depois -->
-
-   
-    </style>
-</head>
-<body>
-    
     <!-- SERVIÇOS -->
     <section class="section" id="servicos">
         <h2>NOSSOS SERVIÇOS</h2>
@@ -81,10 +73,10 @@
     <!-- DEPOIMENTOS -->
     <section class="section" id="depoimentos">
         <h2>O QUE DIZEM NOSSOS CLIENTES</h2>
-        <div class="services">
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-quote-left"></i></div>
-                <p>"O técnico chegou rápido e resolveu meu problema de vazamento. Super recomendo!"</p>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">"O técnico chegou rápido e resolveu meu problema de vazamento. Super recomendo!"</p>
                 <h3>Carlos A.</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -94,9 +86,9 @@
                     <i class="fas fa-star"></i>
                 </div>
             </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-quote-left"></i></div>
-                <p>"Preço justo e serviço limpo. Meu ar está como novo depois da manutenção!"</p>
+            <div class="testimonial-card">
+                <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">"Preço justo e serviço limpo. Meu ar está como novo depois da manutenção!"</p>
                 <h3>Maria S.</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -111,11 +103,11 @@
 
     <!-- RODAPÉ -->
     <footer class="footer">
-        <div class="logo-container" style="width: 100px; height: 100px;">
-             <img src="assets/img/logo-je.png.png" alt="JE Ar-Condicionado" class="logo">
+        <div class="footer-logo-container">
+            <img src="assets/img/logo-je.png" alt="JE Ar-Condicionado" class="footer-logo">
         </div>
         <h3>JE AR-CONDICIONADO</h3>
-        <p>Soluções técnicas com excelência</p>
+        <p class="footer-text">Soluções técnicas com excelência</p>
         
         <div class="social-links">
             <a href="https://wa.me/5585999897844" class="social-link">
@@ -126,35 +118,17 @@
             </a>
         </div>
         
-        <p>WhatsApp: (85) 99989-7844</p>
-        <p>Atendimento 24h para emergências</p>
-        <p>Fortaleza e região</p>
+        <div class="contact-info">
+            <p>WhatsApp: (85) 99989-7844</p>
+            <p>Atendimento 24h para emergências</p>
+            <p>Fortaleza e região</p>
+        </div>
         
         <div class="copyright">
             © 2024 JE Ar-Condicionado. Todos os direitos reservados.
         </div>
     </footer>
 
-    <script>
-        // ANIMAÇÃO DE SCROLL
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-            
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
- 
